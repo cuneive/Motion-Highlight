@@ -11,8 +11,6 @@
     #pragma comment(lib, "opencv_world455.lib")
 #endif
 
-typedef __m128d M128D, * PM128D;
-
 #define BASE_OFFSET(ADDRESS, OFFSET) (((ULONG_PTR)(ADDRESS)) + ((ULONG_PTR)OFFSET))
 
 #define FLOAT_COMPARE(X1, X2, EPSILON) (((X1) == (X2)) && (((X1 + EPSILON) > (X2)) && ((X1 - EPSILON) < (X2))))
